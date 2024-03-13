@@ -44,7 +44,7 @@ function login(){
 }
 
 function getErrorMessage(error) {
-    if (error.code == "auth/user-not-found") {
+    if (error.code == "auth/invalid-credential") {
         return "Usuário nao encontrado";
     }
     return error.message;
